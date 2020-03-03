@@ -4,13 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ChartsModule } from 'ng2-charts';
+import { FinancialComponent } from './components/financial/financial.component';
+import { BoxplotComponent } from './components/boxplot/boxplot.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FinancialComponent,
+    BoxplotComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Custom financial chart type</h1>
+
+    <div class="chart">
+        <canvas baseChart [datasets]="financialChartData" [options]="financialChartOptions"
+        [colors]="financialChartColors" [legend]="financialChartLegend" [chartType]="financialChartType"
+        [plugins]="financialChartPlugins">
+        </canvas>
+    </div>
+
+    <button (click)="update()">Toggle Chart Type</button>
+
+    <p>See also: </p>
+    <a routerLink="/boxplot">Custom boxplot chart type</a>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Angular with charts.js, ng2-charts and custom chart type boxplot</h1>
+
+  <div class="chart" style="margin: auto; max-width: 960px; width: 100%;">
+    <canvas baseChart
+      [chartType]="chartType"
+      [datasets]="boxplotData.datasets"
+      [labels]="boxplotData.labels"
+      [options]="options"
+      [colors]="colors"
+      legend="true"
+      [plugins]="plugins"
+    >
+    </canvas>
+  </div>
+
+  <p>See also: </p>
+  <a routerLink="/financial">Custom financial chart type</a>
+</div>
